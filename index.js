@@ -12,6 +12,7 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
+
 app.use('/teams', require('./controllers/teams'));
 
 app.listen(3000);
