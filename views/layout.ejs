@@ -3,12 +3,44 @@
   <head>
     <title>Hackathon Teams</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style> 
+      .jumbotron {
+        color: white;
+        background-image: linear-gradient(-60deg, #00bf89, #00cad8);
+      }
+      .btn-primary {
+        background-color: #0eb2a4;
+        border: 1px solid #00ffb6;
+        margin-top: 15px;
+      }
+      #top-nav {
+        display: inline;
+        float: left;
+      }
+      .list-inline {
+        float: right;
+      }
+     .clearfix: after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: “”;
+      clear: both;
+      height: 0;
+    }
+    #second-div {
+    background-image: url(https://res.cloudinary.com/kelseygreen/image/upload/v1534484805/hackers.jpg);
+    height: 500px;
+  }
+
+  h2 {
+    color: #188191;
+  }
+
+    </style>
   </head>
   <body>
     <div class="container">
-      <h1>Seattle City Hackathon</h1>
-      <%- body %>
-
       <ul class="list-inline">
         <li>
           <a class="btn btn-primary" href="/">Home</a>
@@ -22,6 +54,9 @@
           <a class="btn btn-primary" href="/teams/new">Sign Up</a>
         </li>
       </ul>
+      <h2 id="top-nav clearfix">Seattle City Hackathon</h2>
+      <%- body %>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>

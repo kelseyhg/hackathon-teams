@@ -42,7 +42,6 @@ router.put('/:name', function(req, res){
 });
 
 router.delete('/:name', function(req, res) {
-	console.log("the effect is here");
 	teamService.deleteTeam(req.params.name);
 	res.send("success");
 
